@@ -16,5 +16,12 @@ namespace Smoogle
             else
                 Console.WriteLine("Blind was rolled down");
         }
+        public void blindsUp()
+        {
+            if (blindsAreDown)
+                Console.WriteLine("Blinds are rolled up");
+            else
+                Console.WriteLine("Blind was already up");
+        }
     }
 }
