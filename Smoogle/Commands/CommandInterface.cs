@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Smoogle.Commands
 {
-    interface Command
+    public interface Command
     {
         void Execute();
     }
