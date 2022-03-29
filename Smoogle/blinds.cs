@@ -14,14 +14,20 @@ namespace Smoogle
             if(blindsAreDown)
                 Console.WriteLine("Blinds are already down");
             else
+            {
                 Console.WriteLine("Blind was rolled down");
+                blindsAreDown = true;
+            }
         }
         public void blindsUp()
         {
-            if (blindsAreDown)
-                Console.WriteLine("Blinds are rolled up");
-            else
+            if (!blindsAreDown)
                 Console.WriteLine("Blind was already up");
+            else
+            {
+                Console.WriteLine("Blinds are rolled up");
+                blindsAreDown = false;
+            }
         }
     }
 }
