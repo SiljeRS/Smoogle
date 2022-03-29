@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Smoogle.Commands
 {
-    public class LightOnCommand : Command
+    public class LightOffCommand : Command
     {
         private Light light;
-        public LightOnCommand(Light l)
+        public LightOffCommand(Light l)
         {
             light = l;
         }
         public void Execute()
         {
-            light.lightOn();
+            light.lightOff();
         }
     }
 }

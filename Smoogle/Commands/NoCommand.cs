@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace Smoogle.Commands
 {
-    public class LightOnCommand : Command
+    public class NoCommand : Command
     {
-        private Light light;
-        public LightOnCommand(Light l)
-        {
-            light = l;
-        }
         public void Execute()
         {
-            light.lightOn();
+            Console.WriteLine("It is a NoCommand");
+            //throw new NotImplementedException();
         }
     }
 }

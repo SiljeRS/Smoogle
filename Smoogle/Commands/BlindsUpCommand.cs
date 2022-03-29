@@ -9,7 +9,7 @@ namespace Smoogle.Commands
     public class BlindsUpCommand : Command
     {
         private Blinds blinds;
-        BlindsUpCommand(Blinds b)
+        public BlindsUpCommand(Blinds b)
         {
             blinds = b;
         }
