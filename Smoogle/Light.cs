@@ -11,8 +11,23 @@ namespace Smoogle
         private bool lightIsOn = false;
         public void lightOn()
         {
-            if(lightIsOn)
-                Console.WriteLine("Light is already");
+            if (lightIsOn)
+                Console.WriteLine("Light is already on");
+            else
+            {
+                Console.WriteLine("Light is turned on");
+                lightIsOn = true;
+            }
+        }
+        public void lightOff()
+        {
+            if (!lightIsOn)
+                Console.WriteLine("Light is already off");
+            else
+            {
+                Console.WriteLine("Light is turned off");
+                lightIsOn = false;
+            }
         }
     }
 }
