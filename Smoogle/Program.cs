@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Smoogle;
 using Smoogle.Commands;
-Console.WriteLine("Hello, World!");
 
 //Laver en controller med 3 af hver knap
 SmoogleController sc = new SmoogleController(3);

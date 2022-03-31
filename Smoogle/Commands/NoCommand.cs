@@ -11,7 +11,6 @@ namespace Smoogle.Commands
         public void Execute()
         {
             Console.WriteLine("It is a NoCommand");
-            //throw new NotImplementedException();
         }
     }
 }
